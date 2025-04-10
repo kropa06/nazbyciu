@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bezpłatne ogłoszenia, sprzedaj, kup, wynajmij, znajdź pracę - nazbyciu.pl</title>
+    <meta name="description" content="nazbyciu.pl - Twój nowy portal z darmowymi ogłoszeniami. Sprzedaj, kup, wynajmij, znajdź pracę. Już wkrótce startujemy! Szeroki wybór kategorii: motoryzacja, nieruchomości, praca, dom i ogród i wiele więcej.">
+    <meta name="keywords" content="darmowe ogłoszenia, ogłoszenia, sprzedaż, kupno, wynajem, praca, motoryzacja, nieruchomości, dom i ogród, elektronika, moda, rolnictwo, zwierzęta, dla dzieci, sport i hobby, muzyka i edukacja, zdrowie i uroda, usługi">
+    <meta name="author" content="nazbyciu.pl">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #505050;
+            color: white;
+            padding-top: 20px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+        #main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        #main h2 {
+            color: #e8491d;
+        }
+        #categories {
+            margin-top: 20px;
+        }
+        #categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #categories ul li {
+            display: inline-block;
+            padding: 10px;
+            margin-right: 10px;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #soon {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 30px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #505050;
+            color: white;
+            margin-top: 20px;
+        }
+
+       .category-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .category-group {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-group h3 {
+            color: #e8491d;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .category-group ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .category-group li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .category-group li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Bezpłatne ogłoszenia, sprzedaj, kup, wynajmij, znajdź pracę - nazbyciu.pl</h1>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <h2>Witaj na nazbyciu.pl - Twoim nowym portalu z darmowymi ogłoszeniami!</h2>
+            <p>
+                Już wkrótce wystartujemy z platformą, która zrewolucjonizuje rynek ogłoszeń w Polsce.
+                U nas znajdziesz wszystko, czego potrzebujesz - od motoryzacji i nieruchomości,
+                po oferty pracy, dom i ogród, elektronikę i wiele, wiele innych.
+                Bądź z nami na bieżąco!
+            </p>
+
+            <h2 style="text-align: center;">Planowane Kategorie</h2>
+             <div id="categories" class="category-section">
+                <div class="category-group">
+                    <h3>Antyki i Kolekcje</h3>
+                    <ul>
+                        <li>Antyki</li>
+                        <li>Kolekcje</li>
+                        <li>Sztuka</li>
+                        <li>Rękodzieło</li>
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Firma i Przemysł</h3>
+                    <ul>
+                        <li>Biuro</li>
+                        <li>Części do maszyn i urządzeń</li>
+                        <li>Kontenery</li>
+                         <li>Maszyny i urządzenia</li>
+                         <li>Odzież robocza</li>
+                         <li>Sklepy i magazyny</li>
+                         <li>Sprzedam firmę</li>
+                         <li>Pozostałe</li>
+                    </ul>
+                </div>
+                 <div class="category-group">
+                    <h3>Motoryzacja</h3>
+                    <ul>
+                        <li>Samochody osobowe</li>
+                        <li>Motocykle i Skutery</li>
+                        <li>Dostawcze</li>
+                         <li>Ciężarowe</li>
+                         <li>Budowlane</li>
+                         <li>Przyczepy i Naczepy</li>
+                         <li>Części samochodowe</li>
+                         <li>Części motocyklowe</li>
+                         <li>Opony i Felgi</li>
+                         <li>Sprzęt car audio</li>
+                         <li>Pozostała motoryzacja</li>
+                         <li>Wyposażenie i akcesoria samochodowe</li>
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Nieruchomości</h3>
+                    <ul>
+                        <li>Działki</li>
+                        <li>Biura i Lokale</li>
+                        <li>Garaże i Parkingi</li>
+                         <li>Stancje i Pokoje</li>
+                         <li>Hale i Magazyny</li>
+                         <li>Pozostałe nieruchomości</li>
+                         <li>Nieruchomości za granicą</li>
+                         <li>Mieszkania</li>
+                         <li>Domy</li>
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Dom i Ogród</h3>
+                    <ul>
+                        <li>Ogród</li>
+                        <li>Budowa i Remont</li>
+                        <li>Wyposażenie wnętrz</li>
+                         <li>Meble</li>
+                         <li>Narzędzia</li>
+                         <li>Ogrzewanie</li>
+                         <li>Oświetlenie</li>
+                         <li>Supermarket</li>
+                         <li>Wykończenie wnętrz</li>
+                         <li>Pozostałe dom i ogród</li>
+                    </ul>
+                </div>
+                 <div class="category-group">
+                    <h3>Praca</h3>
+                    <ul>
+                        <li>Badania i rozwój</li>
+                        <li>Bankowość</li>
+                        <li>BHP i ochrona środowiska</li>
+                         <li>Budowa/remonty</li>
+                         <li>Dostawca, kurier miejski</li>
+                         <li>E-commerce (handel internetowy)</li>
+                         <li>Edukacja</li>
+                         <li>Energetyka</li>
+                         <li>Finanse / księgowość</li>
+                         <li>Franczyza / Własna firma</li>
+                         <li>Fryzjerstwo, kosmetyka</li>
+                         <li>Gastronomia</li>
+                         <li>HR</li>
+                         <li>Hostessa, roznoszenie ulotek</li>
+                         <li>Hotelarstwo</li>
+                         <li>Inżynieria</li>
+                         <li>IT/telekomunikacja</li>
+                         <li>Kierowca</li>
+                         <li>Logistyka, zakupy, spedycja</li>
+                         <li>Marketing i PR</li>
+                         <li>Mechanika i lakiernictwo</li>
+                         <li>Montaż i serwis</li>
+                         <li>Obsługa klienta i call center</li>
+                         <li>Ochrona</li>
+                         <li>Opieka</li>
+                         <li>Organizacja i obsługa imprez</li>
+                         <li>Praca za granicą</li>
+                    </ul>
+                </div>
+
+                <div class="category-group">
+                    <h3>Elektronika</h3>
+                    <ul>
+                        <li>Sprzęt AGD</li>
+                        <li>Fotografia</li>
+                        <li>Gry i Konsole</li>
+                         <li>Komputery</li>
+                         <li>Smartwatche i opaski</li>
+                         <li>Sprzęt audio</li>
+                         <li>Sprzęt video</li>
+                         <li>Telefony</li>
+                         <li>TV</li>
+                         <li>Pozostała elektronika</li>
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Moda</h3>
+                    <ul>
+                        <li>Ubrania damskie</li>
+                        <li>Ubrania męskie</li>
+                        <li>Bielizna damska</li>
+                         <li>Bielizna męska</li>
+                         <li>Biżuteria</li>
+                         <li>Buty damskie</li>
+                         <li>Buty męskie</li>
+                         <li>Czapki i kapelusze</li>
+                         <li>Odzież ciążowa</li>
+                         <li>Do ślubu</li>
+                         <li>Torby i torebki</li>
+                         <li>Zegarki</li>
+                         <li>Akcesoria</li>
+                         <li>Pozostała moda</li>
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Rolnictwo</h3>
+                    <ul>
+                        <li>Ciągniki</li>
+                        <li>Maszyny rolnicze</li>
+                        <li>Przyczepy</li>
+                         <li>Części do maszyn rolniczych</li>
+                         <li>Nawozy</li>
+                         <li>Opony rolnicze</li>
+                         <li>Produkty rolne</li>
+                         <li>Giełda zwierząt</li>
+                         <li>Ryneczek</li>
+                         <li>Środki ochrony roślin</li>
+                         <li>Worki</li>
+                         <li>Zbiorniki</li>
+                         <li>Żywność i suplementacja zwierząt</li>
+                         <li>Pozostałe rolnicze</li>
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Zwierzęta</h3>
+                    <ul>
+                        <li>Akcesoria dla zwierząt</li>
+                        <li>Karma i przysmaki</li>
+                        <li>Akwarystyka</li>
+                         <li>Psy</li>
+                         <li>Koty</li>
+                         <li>Ptaki</li>
+                         <li>Gryzonie i Króliki</li>
+                         <li>Konie</li>
+                         <li>Pozostałe zwierzęta</li>
+                         <li>Terrarystyka</li>
+                         <li>Zaginione i znalezione</li>
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Dla Dzieci</h3>
+                    <ul>
+                        <li>Akcesoria dla niemowląt</li>
+                        <li>Artykuły szkolne</li>
+                        <li>Buciki</li>
+                         <li>Foteliki - Nosidełka</li>
+                         <li>Odzież niemowlęca</li>
+                         <li>Ubranka dla chłopców</li>
+                         <li>Ubranka dla dziewczynek</li>
+                         <li>Wózki dziecięce</li>
+                         <li>Zabawki</li>
+                         <li>Pozostałe dla dzieci</li>
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Sport i Hobby</h3>
+                    <ul>
+                        <li>Akcesoria jeździeckie</li>
+                        <li>Fitness</li>
+                        <li>Gry planszowe</li>
+                         <li>Pojazdy elektryczne</li>
+                         <li>Rowery</li>
+                         <li>Skating</li>
+                         <li>Społeczność</li>
+                         <li>Sporty wodne</li>
+                         <li>Sporty zimowe</li>
+                         <li>Turystyka</li>
+                         <li>Pozostały sport i hobby</li>
+                         <li>Żeglarstwo</li>
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Muzyka i Edukacja</h3>
+                    <ul>
+                        <li>Książki</li>
+                        <li>Filmy</li>
+                        <li>Instrumenty</li>
+                         <li>Materiały językowe</li>
+                         <li>Pozostała muzyka i edukacja</li>
+                         <li>Bilety</li>
+                         <li>Gry Militaria</li>
+                         <li>Wędkarstwo</li>
+                         <li>Muzyka</li>
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Zdrowie i Uroda</h3>
+                    <ul>
+                        <li>Ciało</li>
+                        <li>Twarz</li>
+                        <li>Paznokcie</li>
+                         <li>Włosy</li>
+                         <li>Makijaż</li>
+                         <li>Perfumy</li>
+                         <li>Higiena jamy ustnej</li>
+                         <li>Korekcja wzroku</li>
+                         <li>Produkty CBD</li>
+                         <li>Sprzęt rehabilitacyjny i ortopedyczny</li>
+                         <li>Transport i poruszanie</li>
+                         <li>Urządzenia do masażu</li>
+                         <li>Urządzenia medyczne</li>
+                         <li>Środki ochrony</li>
+                         <li>Witaminy i suplementy zdrowia</li>
+                         <li>Pozostałe</li>
+                    </ul>
+                </div>
+                 <div class="category-group">
+                    <h3>Usługi</h3>
+                    <ul>
+                        <li>Budowa i Remont</li>
+                        <li>Obsługa imprez</li>
+                        <li>Sprzątanie</li>
+                         <li>Tłumaczenia</li>
+                         <li>Usługi finansowe</li>
+                         <li>Usługi informatyczne</li>
+                         <li>Usługi motoryzacyjne</li>
+                         <li>Usługi ogrodnicze</li>
+                         <li>Usługi reklamowe</li>
+                         <li>Usługi profesjonalne</li>
+                         <li>Usługi transportowe</li>
+                         <li>Korepetycje</li>
+                         <li>Kursy i warsztaty</li>
+                         <li>Usługi dla zwierząt</li>
+                         <li>Współpraca biznesowa</li>
+                         <li>Usługi ślubne</li>
+                         <li>Usługi meblarskie</li>
+                         <li>Serwis i naprawa RTV, AGD, Elektronika</li>
+                         <li>Pozostałe usługi</li>
+                    </ul>
+                </div>
+                 <div class="category-group">
+                    <h3>Noclegi</h3>
+                    <ul>
+                        <li>Noclegi za granicą</li>
+                        <li>Noclegi Polska</li>
+                        <li>Kwatery Pracownicze</li>
+                         <li>Kwatery na wspólny wynajem z współlokatorami</li>
+
+                    </ul>
+                </div>
+                <div class="category-group">
+                    <h3>Wypożyczalnia</h3>
+                    <ul>
+                        <li>Imprezy i wydarzenia</li>
+                        <li>Samochody i pojazdy</li>
+                        <li>Pozostałe Wypożyczalnia</li>
+                         <li>Sprzęt medyczny i rehabilitacyjny</li>
+                         <li>Urządzenia, maszyny i narzędzia</li>
+                         <li>Jachty, łodzie i sporty wodne</li>
+                         <li>Sprzęt do ogrodu, Matiały do uprawy roślin, Nasiona, Rośliny</li>
+
+                    </ul>
+                </div>
+                 <div class="category-group">
+                    <h3>Oddam za darmo</h3>
+                    <ul>
+                        <li>Znajdź przedmioty oddawane za darmo</li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <p id="soon">Już wkrótce startujemy! Bądźcie czujni!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p> Kontakt pod adresem: poczta@nazbyciu.pl</p>
+            <p>&copy; 2025 nazbyciu.pl - Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
